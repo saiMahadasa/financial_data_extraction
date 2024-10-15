@@ -1,10 +1,17 @@
 import openai
 import json
+import os
 import pandas as pd
 import streamlit as st
-from secret_key import openai_key
+# from secret_key import openai_key
+from dotenv import load_dotenv
 
-openai.api_key = openai_key
+
+# openai.api_key = openai_key
+
+load_dotenv()
+
+api_key = os.getenv("OPENAI_API_KEY")
 
 
 def get_prompt_financial():
