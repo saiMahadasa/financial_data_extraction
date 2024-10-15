@@ -1,10 +1,11 @@
 import openai
 import json
 import os
+from dotenv import load_dotenv
 import pandas as pd
 import streamlit as st
 # from secret_key import openai_key
-from dotenv import load_dotenv
+
 
 
 # openai.api_key = openai_key
